@@ -1,6 +1,14 @@
-# Go2 Locomotion (Genesis + rsl-rl)
+# Go2 Multi-Speed Locomotion · Genesis + PPO
+
+Trained Unitree Go2 quadruped with PPO in Genesis simulation.
+Supports multi-speed commands (0~1.6 m/s), stable gait with 
+curriculum-based reward shaping.
+
+**No real hardware needed** — WSL2 compatible with built-in recorder.
 
 本项目是一个 Unitree Go2 强化学习训练与评估工程，核心目标是让策略在仿真中实现稳定行走与多速度全向运动。
+
+
 
 ## 1. 项目基于什么
 
