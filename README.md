@@ -1,3 +1,4 @@
+![demo](demo.gif)
 # PPO locomotion for Unitree Go2 | Genesis sim | multi-speed 0~1.8m/s | WSL2 compatible
 
 Trained Unitree Go2 quadruped with PPO in Genesis simulation.
