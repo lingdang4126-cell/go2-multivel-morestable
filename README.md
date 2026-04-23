@@ -1,4 +1,5 @@
-![demo](demo.gif)
+
+<img width="480" height="270" alt="demo" src="https://github.com/user-attachments/assets/3a7e9844-3959-4b87-a182-600d70c3dbe6" />
 # PPO locomotion for Unitree Go2 | Genesis sim | multi-speed 0~1.8m/s | WSL2 compatible
 
 Trained Unitree Go2 quadruped with PPO in Genesis simulation.
