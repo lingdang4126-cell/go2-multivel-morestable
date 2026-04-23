@@ -1,11 +1,8 @@
 ![demo](demo.gif)
-# PPO locomotion for Unitree Go2 | Genesis sim | multi-speed 0~1.8m/s | WSL2 compatible
+# Go2 Multi-Speed Locomotion · Genesis + PPO
 
-Trained Unitree Go2 quadruped with PPO in Genesis simulation.
-Supports multi-speed commands (0~1.6 m/s), stable gait with 
-curriculum-based reward shaping.
-
-10-scenario eval: 1 fall | action_std 0.30 | stillness reward 0.00
+> Unitree Go2 trained with PPO in Genesis | 10-scenario eval: **1 fall** | 
+> action_std **0.30** | supports vx/vy/ωz full omnidirectional commands
 
 **No real hardware needed** — WSL2 compatible with built-in recorder.
 
@@ -93,25 +90,18 @@ python go2_train_multivel.py -e go2-multivel --num_envs 4096 --max_iterations 50
 python go2_train_multivel.py -e go2-multivel --num_envs 16 --max_iterations 300 --show_viewer
 ```
 
-## 5. 从 go2-multivel 到 go2-multivel_morestable
+## 5. 结果
 
-go2-multivel_morestable 的目标是：
+| Metric | Value |
+|--------|-------|
+| Eval scenarios | 10 |
+| Falls | 1 (at 1.8 m/s) |
+| Mean action std | 0.30 |
+| Stillness reward | 0.00 |
+| Training time | ~2h (RTX 5060) |
 
-- 保持全向跟踪能力
-- 降低摔倒率
-- 提升动作平滑性与可控性
-
-实践上通过“同框架继续训练 + 稳定性导向调参”实现：
-
-- 更强的平滑与姿态约束。
-- 更温和的扰动随机化。
-- 保持相同命令空间，避免能力回退。
-
-示例：
-
-```bash
-python go2_train_multivel.py -e go2-multivel_morestable --num_envs 4096 --max_iterations 5000 --seed 1
-```
+Scenarios tested: static stand, forward 1.8m/s, turn left/right, 
+lateral move, backward 1.5m/s, combined forward+turn, stop.
 
 ## 6. 评估与演示
 
