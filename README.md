@@ -1,8 +1,10 @@
-# Go2 Multi-Speed Locomotion · Genesis + PPO
+# PPO locomotion for Unitree Go2 | Genesis sim | multi-speed 0~1.8m/s | WSL2 compatible
 
 Trained Unitree Go2 quadruped with PPO in Genesis simulation.
 Supports multi-speed commands (0~1.6 m/s), stable gait with 
 curriculum-based reward shaping.
+
+10-scenario eval: 1 fall | action_std 0.30 | stillness reward 0.00
 
 **No real hardware needed** — WSL2 compatible with built-in recorder.
 
