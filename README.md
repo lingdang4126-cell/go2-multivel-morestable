@@ -5,7 +5,14 @@
 > action_std **0.30** | supports vx/vy/ωz full omnidirectional commands
 
 **No real hardware needed** — WSL2 compatible with built-in recorder.
+## Why This Repo
 
+Training legged robots without real hardware is hard.
+This repo solves 3 common pain points:
+1. WSL2 rendering → built-in headless recorder
+2. Multi-speed instability → curriculum reward design  
+3. Terrain curriculum → Genesis native subterrain API
+4. 
 本项目是一个 Unitree Go2 强化学习训练与评估工程，核心目标是让策略在仿真中实现稳定行走与多速度全向运动。
 
 
