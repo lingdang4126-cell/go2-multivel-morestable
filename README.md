@@ -1,4 +1,7 @@
 ![demo](demo.gif)
+
+<img width="640" height="360" alt="image" src="https://github.com/user-attachments/assets/87abddfe-2f3e-45fb-b5ca-09576fe7dfeb" />
+
 # Go2 Multi-Speed Locomotion · Genesis + PPO
 
 > Unitree Go2 trained with PPO in Genesis | 10-scenario eval: **1 fall** | 
