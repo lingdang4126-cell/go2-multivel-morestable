@@ -1,6 +1,6 @@
 ![demo](demo.gif)
 
-![multivel_demo_better]multivel_demo_better.gif
+![multivel_demo_better](gifs/multivel_demo_better.gif)
 
 # Go2 Multi-Speed Locomotion · Genesis + PPO
 
