@@ -1,6 +1,6 @@
 ![demo](demo.gif)
 
-<img width="640" height="360" alt="image" src="https://github.com/user-attachments/assets/87abddfe-2f3e-45fb-b5ca-09576fe7dfeb" />
+![multivel_demo_better]multivel_demo_better.gif
 
 # Go2 Multi-Speed Locomotion · Genesis + PPO
 
