@@ -2,6 +2,7 @@
 
 ![multivel_demo_better](gifs/multivel_demo_better.gif)
 
+![8deg_demo](gifs/slope_traverse_8deg_ckpt_200.gif)
 # Go2 Multi-Speed Locomotion · Genesis + PPO
 
 > Unitree Go2 trained with PPO in Genesis | 10-scenario eval: **1 fall** | 
